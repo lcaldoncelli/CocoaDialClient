@@ -1,33 +1,42 @@
+#
+# Be sure to run `pod lib lint CocoaDialClient.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
+
 Pod::Spec.new do |s|
-  s.name     = 'CocoaDialClient'
-  s.version  = '0.0.1'
-  s.license  = { :type => 'public domain', :text => <<-LICENSE
-Public Domain License
-The CocoaDialClient project is in the public domain.
-                 LICENSE
-               }
-  s.summary  = 'Dial Client for Mac and iOS.'
-  s.homepage = 'https://github.com/lcaldoncelli/CocoaDialClient'
-  s.authors  = 'Lucas Caldoncelli Rodrigues', { 'Lucas Caldoncelli Rodrigues' => 'lcaldoncelli@gmail.com' }
+  s.name             = 'CocoaDialClient'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of CocoaDialClient.'
 
-  s.source   = { :git => 'https://github.com/lcaldoncelli/CocoaDialClient.git',
-                 :tag => "#{s.version}" }
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description = 'CocoaDialClient uses UDP to discover DIAL servers inside application network. ' \
-                  'For DIAL specification, visit http://dial-multiscreen.org.'
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
 
-  s.source_files = 'Source/CDC/*.{h,m}'
+  s.homepage         = 'https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Lucas Caldoncelli Rodrigues' => 'lcaldoncelli@gmail.com' }
+  s.source           = { :git => 'https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.requires_arc = true
+  s.ios.deployment_target = '8.0'
 
-  s.ios.deployment_target = '5.0'
-  s.tvos.deployment_target = '9.0'
-  s.osx.deployment_target = '10.8'
-
-  s.ios.frameworks = 'CFNetwork', 'Security'
-  s.tvos.frameworks = 'CFNetwork', 'Security'
-  s.osx.frameworks = 'CoreServices', 'Security'
+  s.source_files = 'CocoaDialClient/Classes/**/*'
   
+  # s.resource_bundles = {
+  #   'CocoaDialClient' => ['CocoaDialClient/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'CocoaAsyncSocket', '~> 7.6.3'
 end
-

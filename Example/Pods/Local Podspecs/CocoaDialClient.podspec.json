@@ -1,0 +1,27 @@
+{
+  "name": "CocoaDialClient",
+  "version": "0.1.0",
+  "summary": "A short description of CocoaDialClient.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Lucas Caldoncelli Rodrigues": "lcaldoncelli@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CocoaDialClient/Classes/**/*",
+  "dependencies": {
+    "CocoaAsyncSocket": [
+      "~> 7.6.3"
+    ]
+  }
+}
