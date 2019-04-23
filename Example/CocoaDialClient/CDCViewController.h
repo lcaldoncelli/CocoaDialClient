@@ -7,14 +7,11 @@
 //
 
 @import UIKit;
-//#import "GCDAsyncUdpSocket.h"
 #import "CocoaDialClient.h"
 
 @interface CDCViewController : UIViewController <CocoaDialClientDelegate> {
     
 }
-
-//@property (nonatomic, retain) GCDAsyncUdpSocket *udpSocket;
 
 - (IBAction)send:(id)sender;
 

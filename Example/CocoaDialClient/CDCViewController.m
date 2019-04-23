@@ -7,8 +7,6 @@
 //
 
 #import "CDCViewController.h"
-//#import "GCDAsyncUdpSocket.h"
-
 @interface CDCViewController ()
 
 @end
@@ -16,7 +14,6 @@
 CocoaDialClient *dialClient;
 
 @implementation CDCViewController
-//@synthesize udpSocket;
 
 - (void)viewDidLoad
 {

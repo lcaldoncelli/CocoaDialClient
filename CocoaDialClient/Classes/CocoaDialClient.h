@@ -8,7 +8,7 @@
 //  https://github.com/lcaldoncelli/CocoaDialClient
 //
 
-#import "GCDAsyncUdpSocket.h"
+#import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
 #import "CocoaDialServerObject.h"
 
 @class CocoaDialClient;
