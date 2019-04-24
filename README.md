@@ -30,8 +30,18 @@ CocoaDialClient *dialClient;
 - (void)dialServerListUpdated:(NSArray *)servers
 {
     NSLog(@"dialServerListUpdated");
+    CocoaDialServerObject* last = nil;
     for (CocoaDialServerObject* result in servers){
         NSLog(@"%@ %@ %@ %@",result.location, result.hostAddress, result.usn, result.uuid);
+        last = result;
+    }
+    
+    if (last != nil) {
+        [dialClient launchApplication:@"Netflix" atServer:last withParameters:@"cmd=launchLive&acc=7831770&channel=LCH345"];
+        [dialClient getApplicationData:@"Netflix" atServer:last completionHandler:^(NSDictionary * _Nullable data, NSError * _Nullable connectionError) {
+            NSLog(@"Netflix data received:\n%@", data);
+        }];
+        
     }
 }
 @end
