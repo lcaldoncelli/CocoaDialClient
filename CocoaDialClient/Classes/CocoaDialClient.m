@@ -9,6 +9,7 @@
 //
 
 #import "CocoaDialClient.h"
+#import <XMLDictionary/XMLDictionary.h>
 
 @interface CocoaDialClient ()
 @end
@@ -33,6 +34,14 @@
 }
 
 - (BOOL)findServers {
+    return [self findServersWithTimeout:3000];
+}
+
+- (NSArray *) getServers {
+    return self.servers;
+}
+
+- (BOOL)findServersWithTimeout:(int)timeoutMs {
     [self.servers removeAllObjects];
     NSString *host = @"239.255.255.250";
     int port = 1900;
@@ -40,16 +49,13 @@
     NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
     [udpSocket sendData:data toHost:host port:port withTimeout:-1 tag:0];
     
-    [NSTimer scheduledTimerWithTimeInterval:3.0
+    [NSTimer scheduledTimerWithTimeInterval:(timeoutMs/1000)
                                      target:self
                                    selector:@selector(findServersTimeout)
                                    userInfo:nil
                                     repeats:NO];
-    
-//    NSLog(@"SENT: %@", msg);
     return YES;
 }
-
 - (void)setupSocket
 {
     // Setup our socket.
@@ -68,19 +74,15 @@
     
     NSError *error = nil;
     
-    if (![udpSocket bindToPort:65507 error:&error])
-    {
+    if (![udpSocket bindToPort:65507 error:&error]) {
         NSLog(@"Error binding: %@", error);
         return;
     }
     
-    if (![udpSocket beginReceiving:&error])
-    {
+    if (![udpSocket beginReceiving:&error]) {
         NSLog(@"Error receiving: %@", error);
         return;
     }
-    
-//    NSLog(@"Ready");
 }
 
 
@@ -100,13 +102,10 @@
 fromAddress:(NSData *)address withFilterContext:(id)filterContext
 {
     NSString *msg = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    if (msg)
-    {
+    if (msg) {
 //        NSLog(@"RECV: %@", msg);
         [servers addObject:[self parseServer:msg]];
-    }
-    else
-    {
+    } else {
         NSString *host = nil;
         uint16_t port = 0;
         [GCDAsyncUdpSocket getHost:&host port:&port fromAddress:address];
@@ -121,7 +120,7 @@ fromAddress:(NSData *)address withFilterContext:(id)filterContext
     NSArray *array = [msg componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     bool found = NO;
     for (NSString* line in array) {
-//        NSLog(@"+%@",line);
+        //NSLog(@">>>%@",line);
         if ([line hasPrefix:@"LOCATION: "]) {
             //LOCATION: http://192.168.15.7:56790/dd.xml
             NSString *location = [line stringByReplacingOccurrencesOfString:@"LOCATION: " withString:@""];
@@ -143,14 +142,42 @@ fromAddress:(NSData *)address withFilterContext:(id)filterContext
             result.uuid = uuid;
         }
     }
+    
 //    NSLog(@"%@ %@ %@ %@",result.location, result.hostAddress, result.usn, result.uuid);
     
     if (found) {
-        
+        NSURL *url = [NSURL URLWithString:result.location];
+        NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            if (error) {
+                NSLog(@"Error,%@", [error localizedDescription]);
+            } else {
+                [self parseAndUpdateServerInfo:data response:response forServer:result];
+            }
+        }];
         return result;
     }
     
     return nil;
+}
+
+- (BOOL)parseAndUpdateServerInfo:(NSData *)data response:(NSURLResponse*)response forServer:(CocoaDialServerObject*) server
+{
+    XMLDictionaryParser * parser = [[XMLDictionaryParser alloc] init];
+    NSDictionary *dict = [parser dictionaryWithData:data];
+    
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
+    NSDictionary *headers = [httpResponse allHeaderFields];
+    server.applicationUrl = [headers valueForKey:@"Application-URL"];
+    
+    NSDictionary *device = [dict valueForKey:@"device"];
+    if (device != nil) {
+        server.friendlyName = [device valueForKey:@"friendlyName"];
+        server.modelName = [device valueForKey:@"modelName"];
+        return YES;
+    }
+    return NO;
 }
 
 -(void) findServersTimeout {
@@ -159,6 +186,51 @@ fromAddress:(NSData *)address withFilterContext:(id)filterContext
            && [self.delegate respondsToSelector:@selector(dialServerListUpdated:)]) {
             [self.delegate dialServerListUpdated:servers];
     }
+}
+
+- (BOOL)getApplicationData:(NSString*)applicationName atServer:(CocoaDialServerObject*)server completionHandler:(void (^)(NSDictionary* _Nullable data, NSError* _Nullable connectionError)) handler
+{
+    if (server != nil && server.applicationUrl != nil && server.applicationUrl.length > 0 ) {
+        NSURL *url = [NSURL URLWithString:[server.applicationUrl stringByAppendingString:applicationName]];
+        NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            NSDictionary *result = nil;
+            if (!error) {
+                XMLDictionaryParser * parser = [[XMLDictionaryParser alloc] init];
+                result = [parser dictionaryWithData:data];
+            }
+            
+            if (handler) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    handler(result, error);
+                });
+            }
+        }];
+    }
+    return NO;
+}
+
+- (BOOL)launchApplication:(NSString*)applicationName atServer:(CocoaDialServerObject*)server withParameters:(NSString*)parameters
+{
+    if (server != nil && server.applicationUrl != nil && server.applicationUrl.length > 0 ) {
+        NSURL *url = [NSURL URLWithString:[server.applicationUrl stringByAppendingString:applicationName]];
+        NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+        [urlRequest setHTTPMethod:@"POST"];
+        
+        if (parameters != nil && parameters.length > 0) {
+            [urlRequest setHTTPBody:[parameters dataUsingEncoding:NSUTF8StringEncoding]];
+        }
+        
+        NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+        [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+            if (error) {
+                NSLog(@"Error Launching Application %@", [error localizedDescription]);
+            }
+        }];
+        return YES;
+    }
+    return NO;
 }
 
 @end

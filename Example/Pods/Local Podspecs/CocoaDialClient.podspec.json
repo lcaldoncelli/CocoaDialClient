@@ -1,9 +1,9 @@
 {
   "name": "CocoaDialClient",
-  "version": "0.1.0",
-  "summary": "A short description of CocoaDialClient.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient",
+  "version": "0.1.1",
+  "summary": "CocoaDialClient is a basic implementation of DIAL protocol for servers discovery.",
+  "description": "CocoaDialClient is a basic implementation of DIAL (DIscover And Launch http://www.dial-multiscreen.org/) protocol for servers discovery.",
+  "homepage": "https://github.com/lcaldoncelli/CocoaDialClient",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,9 +12,10 @@
     "Lucas Caldoncelli Rodrigues": "lcaldoncelli@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Lucas Caldoncelli Rodrigues/CocoaDialClient.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/lcaldoncelli/CocoaDialClient.git",
+    "tag": "0.1.1"
   },
+  "social_media_url": "https://twitter.com/lcaldoncelli",
   "platforms": {
     "ios": "8.0"
   },
@@ -22,6 +23,9 @@
   "dependencies": {
     "CocoaAsyncSocket": [
       "~> 7.6.3"
+    ],
+    "XMLDictionary": [
+      "~> 1.4"
     ]
   }
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CocoaDialClient'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'CocoaDialClient is a basic implementation of DIAL protocol for servers discovery.'
 
 # This description is used to generate tags and improve search results.
@@ -37,4 +37,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'CocoaAsyncSocket', '~> 7.6.3'
+  s.dependency 'XMLDictionary', '~> 1.4'
 end

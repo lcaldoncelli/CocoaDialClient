@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain) NSString *hostAddress;
 @property (nonatomic, retain) NSString *location;
 
+@property (nonatomic, retain) NSString *applicationUrl;
+@property (nonatomic, retain) NSString *friendlyName;
+@property (nonatomic, retain) NSString *modelName;
+
 @end
 
 NS_ASSUME_NONNULL_END

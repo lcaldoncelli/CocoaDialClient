@@ -7,72 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0300A19886638E8556A5C16657492C2C /* CocoaDialClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6B87AFAD0ECD72A91ECC4F5F12CF34 /* CocoaDialClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D01C28BDCE0CA6C5E46DC2CF79F6089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */; };
-		1FEEA92C76862EE48C3456778BFEFA98 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937B0F49E714B0DD9FBF78C96885DDD4 /* Security.framework */; };
-		276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00CC1B3CEC8C129342799A0D57D1145F /* XMLDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C84B2D627775A87A7D64956A01F3B6 /* XMLDictionary.framework */; };
+		099BE7891BD415875425F13FC006F6C5 /* Pods-CocoaDialClient_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E07B1517E0C78E6BE5CC09D72DE33BC1 /* Pods-CocoaDialClient_Example-dummy.m */; };
+		1D01C28BDCE0CA6C5E46DC2CF79F6089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */; };
+		1FEEA92C76862EE48C3456778BFEFA98 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB128623C08CB7FE3579EAFE54D208B /* Security.framework */; };
+		276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D912009C3C9C95F4964AA1FE9B20C804 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E0688B1DACCE2394704ECB4EF002C3C /* Pods-CocoaDialClient_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1E1B21437C920AF35F334F009060AD /* Pods-CocoaDialClient_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		36A091FE474EC0428DFF2275302A6729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */; };
-		3701C8CA10320C54072DB4F9A7A0EE6A /* CocoaDialClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF07F892D824B30E81108A07E07E76 /* CocoaDialClient-dummy.m */; };
-		4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */; };
-		75421E1CB5039B9C0122B8C4D5EB973F /* CocoaDialClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CDA4091ADD40527B11E4184B471B0A /* CocoaDialClient.m */; };
-		7FD154197DAE83307BC440D7BFF6097A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */; };
-		84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		AC85AFB005590E960C8EBB4889CAD64A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */; };
-		B7FC4D767BB35716A6E197F5C1892022 /* Pods-CocoaDialClient_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B23A1BE564B11FF7DC394D841D69053 /* Pods-CocoaDialClient_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C09C9F1EEF26E821217DC8CC83E9E848 /* CocoaDialServerObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1803513C871C31A66E75071700833A20 /* CocoaDialServerObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D617EBD93C9561FF482CBE88A7CE56F1 /* Pods-CocoaDialClient_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E07B1517E0C78E6BE5CC09D72DE33BC1 /* Pods-CocoaDialClient_Example-dummy.m */; };
-		DFF193A6C08C4F761BA46A221E07DD89 /* CocoaDialServerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0D312C7F578FEEF46006E266352E8F /* CocoaDialServerObject.m */; };
+		30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD96E49C39185469C32AFD56B79DB77 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 295E9A0B514D349C8D7E978B8F423306 /* CocoaAsyncSocket-dummy.m */; };
+		6C7886B744AB2369FC787BDC9612C269 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E442EF313D782CD50DE426B3B33F3B /* CocoaAsyncSocket.framework */; };
+		72A8557A457B357B073CC8DC37228AAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */; };
+		796C8B391DC26F187D9CDA73AB10E61B /* CocoaDialClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C64F71F6A80330110941CADFBF93FE4D /* CocoaDialClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FD154197DAE83307BC440D7BFF6097A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */; };
+		84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C8288077615C645B3AAEFBC29BF35C /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA7A940DB7D3F7CB8E2D7F6A50D8E4 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CA22578CF1142DB33C5297495E59E2A /* CocoaDialServerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0D312C7F578FEEF46006E266352E8F /* CocoaDialServerObject.m */; };
+		A4C0596A41483D0C7654BA30074110B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */; };
+		A68A71A81DD5FBCE143272F4B784F416 /* Pods-CocoaDialClient_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B23A1BE564B11FF7DC394D841D69053 /* Pods-CocoaDialClient_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9F24587A908B96EB7FA5998B52A8B17 /* XMLDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 576565223BBF8830344775A8AB7DB505 /* XMLDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A0B05EADAE1A1BD88E9CE22DAEA26 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C24990E3A2232F2BCC01C953CB517187 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 55585BE4ADDF38E0A83609F3B6E475C8 /* XMLDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C6A7AB279F7B2D7205BA950BB1AB3814 /* XMLDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 549C70F817C582BCFF90C56717DFAB82 /* XMLDictionary-dummy.m */; };
+		D3A04581E10470A979D3744F4605EEB7 /* CocoaDialClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CDA4091ADD40527B11E4184B471B0A /* CocoaDialClient.m */; };
 		E028B0182FAACE942923BF6D5E6322C6 /* Pods-CocoaDialClient_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F97A2130AB57DBDC1D20D3C27F6AC2B /* Pods-CocoaDialClient_Tests-dummy.m */; };
-		E61F6857280EB342DB678146216BEF42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */; };
-		E9E156467A5BFD6B48135B0B19BD6D36 /* CocoaDialClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C64F71F6A80330110941CADFBF93FE4D /* CocoaDialClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDCED9422681E15E4AB4EBD265B3358E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CCB46C1F69F13074194BCFCDDBD27 /* CFNetwork.framework */; };
+		E42AB87F5801627284EF96F93B81020C /* CocoaDialClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6B87AFAD0ECD72A91ECC4F5F12CF34 /* CocoaDialClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDCED9422681E15E4AB4EBD265B3358E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235F6312CF704AEFC8E7690EB45CFD3A /* CFNetwork.framework */; };
+		EF091FB0C911CE0CC15B1DF09573A321 /* CocoaDialClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CF07F892D824B30E81108A07E07E76 /* CocoaDialClient-dummy.m */; };
+		EF6D170919C968881ED482AEC5D4E454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */; };
+		F3FABA0A60F67FD86D1F4E033AE3479E /* CocoaDialServerObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1803513C871C31A66E75071700833A20 /* CocoaDialServerObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6DDE8DB1AF489837DCC8AFEC9777A63 /* XMLDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E0C400CA9450EBDBF1D21CBE5014E3 /* XMLDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C87C5BC6FA974CABE9F97C4E5188467 /* PBXContainerItemProxy */ = {
+		07D1EE31267950EEFC9A2BDC5B09F3D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F463D4A3EEF3F5D57D5B193F641A8571;
+			remoteInfo = XMLDictionary;
+		};
+		13DE05CAC724AF50BA3B8265DE708647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F463D4A3EEF3F5D57D5B193F641A8571;
+			remoteInfo = XMLDictionary;
+		};
+		1F5A469EB0ED7A9E0B2B3B93FA5B1D20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
 			remoteInfo = CocoaAsyncSocket;
-		};
-		5D8962F85F98128953C2CE441A9A2C72 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13BA639851EF19278D56DEE56C5FAD89;
-			remoteInfo = CocoaDialClient;
 		};
 		68CF08BF703A502654A0FE932CF55A0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5FB5B1C4A975106860A731D309E43067;
+			remoteGlobalIDString = F8536FF6867680CE2DB5E769C60C6A76;
 			remoteInfo = "Pods-CocoaDialClient_Example";
 		};
-		8D5AF72483FCD43F729D52B30314BD10 /* PBXContainerItemProxy */ = {
+		81A0C14B5FAE9DA46B9531627EF29842 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
 			remoteInfo = CocoaAsyncSocket;
 		};
+		9FDDF3E40D8D1815E101611F139AD831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C7CDE846224653CBB180558628B9436;
+			remoteInfo = CocoaDialClient;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0411AD1E706E10578DE390ABB5FB11F6 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
 		11BB543360A8F1D5E6313B5A97F1DB6B /* CocoaDialClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaDialClient-prefix.pch"; sourceTree = "<group>"; };
+		11E601314FC2E554131149B6DF31DDA2 /* XMLDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMLDictionary.xcconfig; sourceTree = "<group>"; };
 		12CDA4091ADD40527B11E4184B471B0A /* CocoaDialClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CocoaDialClient.m; path = CocoaDialClient/Classes/CocoaDialClient.m; sourceTree = "<group>"; };
+		1675D35BCF3002FC28BFBDAD8131B8EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1803513C871C31A66E75071700833A20 /* CocoaDialServerObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaDialServerObject.h; path = CocoaDialClient/Classes/CocoaDialServerObject.h; sourceTree = "<group>"; };
 		20959D8F6BE763A6A54415FC21387CB9 /* Pods-CocoaDialClient_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaDialClient_Tests-resources.sh"; sourceTree = "<group>"; };
-		26446C934AC5390532FB7A431359FC7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		330814B3C2DDA66B814375BBD80FEBE6 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		235F6312CF704AEFC8E7690EB45CFD3A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		295E9A0B514D349C8D7E978B8F423306 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		2CB128623C08CB7FE3579EAFE54D208B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2E6B01040B16A53ADF30EEDCB9E6985C /* CocoaDialClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaDialClient.framework; path = CocoaDialClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F281BF0BD6F26580837712141A9521C /* Pods_CocoaDialClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CocoaDialClient_Tests.framework; path = "Pods-CocoaDialClient_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338EA023E2F14D4570194B2C93552C70 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
 		3A11B12C9ABB244EB06A4A636F438F18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		403A4166FDCE51DD1989EE37ED3CD8F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406AE6F618359C2405E000E454E2A519 /* Pods-CocoaDialClient_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CocoaDialClient_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -80,50 +103,57 @@
 		470B23240678E8762DFCE9317A707817 /* Pods-CocoaDialClient_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CocoaDialClient_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		473DE1772FDC79D622688A823FDD2E0F /* Pods-CocoaDialClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaDialClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D6B87AFAD0ECD72A91ECC4F5F12CF34 /* CocoaDialClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaDialClient.h; path = CocoaDialClient/Classes/CocoaDialClient.h; sourceTree = "<group>"; };
+		4F8A0B05EADAE1A1BD88E9CE22DAEA26 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		50846AD7E5AE773987EC5E4696FAEFE8 /* CocoaDialClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CocoaDialClient.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		562CCB46C1F69F13074194BCFCDDBD27 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		5A9DFAC53FF8A02CD798C237DC8DA6BA /* Pods_CocoaDialClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CocoaDialClient_Example.framework; path = "Pods-CocoaDialClient_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		549C70F817C582BCFF90C56717DFAB82 /* XMLDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMLDictionary-dummy.m"; sourceTree = "<group>"; };
+		55585BE4ADDF38E0A83609F3B6E475C8 /* XMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = XMLDictionary/XMLDictionary.m; sourceTree = "<group>"; };
+		576565223BBF8830344775A8AB7DB505 /* XMLDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = XMLDictionary/XMLDictionary.h; sourceTree = "<group>"; };
+		5CD96E49C39185469C32AFD56B79DB77 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		60B69BE754C4554F3D5F7A5C53DAFBB6 /* Pods-CocoaDialClient_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CocoaDialClient_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		619980A9755F036859CCD0423C81E0A8 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		64CF07F892D824B30E81108A07E07E76 /* CocoaDialClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaDialClient-dummy.m"; sourceTree = "<group>"; };
 		68C73B9D4C1C8710EFDA05CE388FC8E0 /* Pods-CocoaDialClient_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CocoaDialClient_Example.modulemap"; sourceTree = "<group>"; };
 		6B23A1BE564B11FF7DC394D841D69053 /* Pods-CocoaDialClient_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CocoaDialClient_Example-umbrella.h"; sourceTree = "<group>"; };
+		719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B292290AD6F9303513A4F29658CA931 /* Pods-CocoaDialClient_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaDialClient_Example-resources.sh"; sourceTree = "<group>"; };
+		80E0C400CA9450EBDBF1D21CBE5014E3 /* XMLDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLDictionary-umbrella.h"; sourceTree = "<group>"; };
+		83758EE23E31C323124A54B0BFF63E9F /* XMLDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMLDictionary-prefix.pch"; sourceTree = "<group>"; };
 		887C928826B74EBA89BB9749B57B8F10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		8D3EDCAA6812F5D1C1E8C09341E0CFB9 /* Pods_CocoaDialClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CocoaDialClient_Example.framework; path = "Pods-CocoaDialClient_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F97A2130AB57DBDC1D20D3C27F6AC2B /* Pods-CocoaDialClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CocoaDialClient_Tests-dummy.m"; sourceTree = "<group>"; };
-		91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		937B0F49E714B0DD9FBF78C96885DDD4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		90E4F4EBA736429C5A6C906DCD1E29D8 /* XMLDictionary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMLDictionary.modulemap; sourceTree = "<group>"; };
+		91AD13F239E33790497EA83FE9C4A225 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93FA7A940DB7D3F7CB8E2D7F6A50D8E4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		95E31BA7D5E011565A7895D13D382864 /* Pods-CocoaDialClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaDialClient_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		A0C84B2D627775A87A7D64956A01F3B6 /* XMLDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB129B1CBC0933C6D3D1AD7CD80618BE /* CocoaDialClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaDialClient.modulemap; sourceTree = "<group>"; };
 		AEF00080FF3703290F037D81A102F5FE /* Pods-CocoaDialClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaDialClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
-		B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B5BDDE5880AED8FD21B0EEED7C5919DF /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		B85597DA1253E8E3D96ABD79C0DC4E66 /* Pods-CocoaDialClient_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaDialClient_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C0E442EF313D782CD50DE426B3B33F3B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C8288077615C645B3AAEFBC29BF35C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		C596E45D10255FFB697221448043659E /* Pods-CocoaDialClient_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CocoaDialClient_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		C64F71F6A80330110941CADFBF93FE4D /* CocoaDialClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaDialClient-umbrella.h"; sourceTree = "<group>"; };
 		CACD8F83293EEC0FE2D2EE8EF0A64EA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D05982B1581576618E9632562E810E5E /* Pods-CocoaDialClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CocoaDialClient_Tests.modulemap"; sourceTree = "<group>"; };
-		D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D33E724777B00A8BDA5605429A11D75F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8FC52C83A252B323C56CC67E0C1AB96 /* CocoaDialClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaDialClient.xcconfig; sourceTree = "<group>"; };
-		DA2F2A9EC65DAC8B50D1CC1BD2E83488 /* CocoaDialClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaDialClient.framework; path = CocoaDialClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D912009C3C9C95F4964AA1FE9B20C804 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
 		DA7351155988D7781B025F306AD9F842 /* Pods-CocoaDialClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CocoaDialClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD7EC915210AC738DB48207214E4204 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		E07B1517E0C78E6BE5CC09D72DE33BC1 /* Pods-CocoaDialClient_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CocoaDialClient_Example-dummy.m"; sourceTree = "<group>"; };
-		E6C5919021AC2DC8D29CC8C89A8E20F1 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
-		E6D22D20CBACE38A24ED0BAFDD9D4CB1 /* Pods_CocoaDialClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CocoaDialClient_Tests.framework; path = "Pods-CocoaDialClient_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1E1B21437C920AF35F334F009060AD /* Pods-CocoaDialClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CocoaDialClient_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F4B618FBDA728725A1385B222ED6F459 /* XMLDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMLDictionary.framework; path = XMLDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0D312C7F578FEEF46006E266352E8F /* CocoaDialServerObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CocoaDialServerObject.m; path = CocoaDialClient/Classes/CocoaDialServerObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25B88C16900BE82C1C762D1E4E97EF65 /* Frameworks */ = {
+		334300B1C3D3C9412B2DC25AD58493E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61F6857280EB342DB678146216BEF42 /* Foundation.framework in Frameworks */,
+				72A8557A457B357B073CC8DC37228AAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +167,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE5159BF5C77007A8341A72D2F2E92E8 /* Frameworks */ = {
+		7B92D978F6EBAD1856C9E40075B83DA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC85AFB005590E960C8EBB4889CAD64A /* CocoaAsyncSocket.framework in Frameworks */,
-				36A091FE474EC0428DFF2275302A6729 /* Foundation.framework in Frameworks */,
+				6C7886B744AB2369FC787BDC9612C269 /* CocoaAsyncSocket.framework in Frameworks */,
+				EF6D170919C968881ED482AEC5D4E454 /* Foundation.framework in Frameworks */,
+				00CC1B3CEC8C129342799A0D57D1145F /* XMLDictionary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B0B6DD36BE35735B6224854A157918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C0596A41483D0C7654BA30074110B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,15 +214,50 @@
 			path = "Target Support Files/Pods-CocoaDialClient_Example";
 			sourceTree = "<group>";
 		};
-		013C76347A4E9769315A6334B6F81572 /* Products */ = {
+		0A7AAA59DDDD1A71E5C34CC92F3389BE /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				0411AD1E706E10578DE390ABB5FB11F6 /* CocoaAsyncSocket.framework */,
-				DA2F2A9EC65DAC8B50D1CC1BD2E83488 /* CocoaDialClient.framework */,
-				5A9DFAC53FF8A02CD798C237DC8DA6BA /* Pods_CocoaDialClient_Example.framework */,
-				E6D22D20CBACE38A24ED0BAFDD9D4CB1 /* Pods_CocoaDialClient_Tests.framework */,
+				C4C8288077615C645B3AAEFBC29BF35C /* GCDAsyncSocket.h */,
+				4F8A0B05EADAE1A1BD88E9CE22DAEA26 /* GCDAsyncSocket.m */,
+				93FA7A940DB7D3F7CB8E2D7F6A50D8E4 /* GCDAsyncUdpSocket.h */,
+				5CD96E49C39185469C32AFD56B79DB77 /* GCDAsyncUdpSocket.m */,
+				7E58DAA8C693D8D7CDD18E9B55A5A84D /* Support Files */,
 			);
-			name = Products;
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		18C91130562DB39A20EFCC741F89F947 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1675D35BCF3002FC28BFBDAD8131B8EA /* Info.plist */,
+				90E4F4EBA736429C5A6C906DCD1E29D8 /* XMLDictionary.modulemap */,
+				11E601314FC2E554131149B6DF31DDA2 /* XMLDictionary.xcconfig */,
+				549C70F817C582BCFF90C56717DFAB82 /* XMLDictionary-dummy.m */,
+				83758EE23E31C323124A54B0BFF63E9F /* XMLDictionary-prefix.pch */,
+				80E0C400CA9450EBDBF1D21CBE5014E3 /* XMLDictionary-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XMLDictionary";
+			sourceTree = "<group>";
+		};
+		3D6490D718836CE188047FE4517F0B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A7AAA59DDDD1A71E5C34CC92F3389BE /* CocoaAsyncSocket */,
+				B60D018F452A3B2863DF8110177BE9ED /* XMLDictionary */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57686042698916BE7B280821168B436B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				235F6312CF704AEFC8E7690EB45CFD3A /* CFNetwork.framework */,
+				719C1A9E14CB55D58ECE3825C673FD91 /* Foundation.framework */,
+				2CB128623C08CB7FE3579EAFE54D208B /* Security.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		57E5D952B6C25402CC1702AD608C19B2 /* Pods-CocoaDialClient_Tests */ = {
@@ -204,14 +278,14 @@
 			path = "Target Support Files/Pods-CocoaDialClient_Tests";
 			sourceTree = "<group>";
 		};
-		60C9A1320C3EBE4B223A2BA19752C2A5 /* iOS */ = {
+		685B5B5DE45C5D25953F663550EDCD9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				562CCB46C1F69F13074194BCFCDDBD27 /* CFNetwork.framework */,
-				B2A48624B2EAAEBBCA377C766798317E /* Foundation.framework */,
-				937B0F49E714B0DD9FBF78C96885DDD4 /* Security.framework */,
+				C0E442EF313D782CD50DE426B3B33F3B /* CocoaAsyncSocket.framework */,
+				A0C84B2D627775A87A7D64956A01F3B6 /* XMLDictionary.framework */,
+				57686042698916BE7B280821168B436B /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -219,11 +293,25 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				E540E10AB746DBD68205F5461991EA16 /* Development Pods */,
-				E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */,
-				991819176034B11A99ECC53C250D06AD /* Pods */,
-				013C76347A4E9769315A6334B6F81572 /* Products */,
+				685B5B5DE45C5D25953F663550EDCD9A /* Frameworks */,
+				3D6490D718836CE188047FE4517F0B22 /* Pods */,
+				B9CD00C4375193B4B73EF8B603D913CC /* Products */,
 				DFC436E7112A1E552DA506123DEC333F /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7E58DAA8C693D8D7CDD18E9B55A5A84D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5BDDE5880AED8FD21B0EEED7C5919DF /* CocoaAsyncSocket.modulemap */,
+				338EA023E2F14D4570194B2C93552C70 /* CocoaAsyncSocket.xcconfig */,
+				295E9A0B514D349C8D7E978B8F423306 /* CocoaAsyncSocket-dummy.m */,
+				619980A9755F036859CCD0423C81E0A8 /* CocoaAsyncSocket-prefix.pch */,
+				D912009C3C9C95F4964AA1FE9B20C804 /* CocoaAsyncSocket-umbrella.h */,
+				D33E724777B00A8BDA5605429A11D75F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
 			sourceTree = "<group>";
 		};
 		87BA644ABD5F51AC9E3E3595FB93A350 /* Pod */ = {
@@ -236,39 +324,27 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		97CDCB5A0A30A5875BD2674D78A4B922 /* CocoaAsyncSocket */ = {
+		B60D018F452A3B2863DF8110177BE9ED /* XMLDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				D82B81E88C7D98976B018DB4903B5D0C /* GCDAsyncSocket.h */,
-				8F9509718CFCC3D81230AA7CF02478B7 /* GCDAsyncSocket.m */,
-				30CCCF41576100268BFA48C3EED9517C /* GCDAsyncUdpSocket.h */,
-				9235AEFD042C8D96AF4B4AA61E18C420 /* GCDAsyncUdpSocket.m */,
-				ABF5ACA2D50E24517E38E82BF1F34D9B /* Support Files */,
+				576565223BBF8830344775A8AB7DB505 /* XMLDictionary.h */,
+				55585BE4ADDF38E0A83609F3B6E475C8 /* XMLDictionary.m */,
+				18C91130562DB39A20EFCC741F89F947 /* Support Files */,
 			);
-			name = CocoaAsyncSocket;
-			path = CocoaAsyncSocket;
+			name = XMLDictionary;
+			path = XMLDictionary;
 			sourceTree = "<group>";
 		};
-		991819176034B11A99ECC53C250D06AD /* Pods */ = {
+		B9CD00C4375193B4B73EF8B603D913CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97CDCB5A0A30A5875BD2674D78A4B922 /* CocoaAsyncSocket */,
+				91AD13F239E33790497EA83FE9C4A225 /* CocoaAsyncSocket.framework */,
+				2E6B01040B16A53ADF30EEDCB9E6985C /* CocoaDialClient.framework */,
+				8D3EDCAA6812F5D1C1E8C09341E0CFB9 /* Pods_CocoaDialClient_Example.framework */,
+				2F281BF0BD6F26580837712141A9521C /* Pods_CocoaDialClient_Tests.framework */,
+				F4B618FBDA728725A1385B222ED6F459 /* XMLDictionary.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		ABF5ACA2D50E24517E38E82BF1F34D9B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				330814B3C2DDA66B814375BBD80FEBE6 /* CocoaAsyncSocket.modulemap */,
-				0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */,
-				A150BFDFB60879728DB1958A240D4383 /* CocoaAsyncSocket-dummy.m */,
-				E6C5919021AC2DC8D29CC8C89A8E20F1 /* CocoaAsyncSocket-prefix.pch */,
-				AF8C213E138128F7803201DCD578F6D0 /* CocoaAsyncSocket-umbrella.h */,
-				26446C934AC5390532FB7A431359FC7A /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CocoaAsyncSocket";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BC8246E922C6D43D1E215D02AD6078D3 /* Support Files */ = {
@@ -316,23 +392,23 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */,
-				60C9A1320C3EBE4B223A2BA19752C2A5 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		384B221AFB2396B3A9B11C076589E783 /* Headers */ = {
+		0658021CB605ECBF238C50FF400198E1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7FC4D767BB35716A6E197F5C1892022 /* Pods-CocoaDialClient_Example-umbrella.h in Headers */,
+				A68A71A81DD5FBCE143272F4B784F416 /* Pods-CocoaDialClient_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BAA494EA070C9AD032F4B71CC3825E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DDE8DB1AF489837DCC8AFEC9777A63 /* XMLDictionary-umbrella.h in Headers */,
+				A9F24587A908B96EB7FA5998B52A8B17 /* XMLDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,13 +420,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6AAE992EC4D9D922D2334E3E344B133 /* Headers */ = {
+		B20084E063AF3C321615443676BBF689 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E156467A5BFD6B48135B0B19BD6D36 /* CocoaDialClient-umbrella.h in Headers */,
-				0300A19886638E8556A5C16657492C2C /* CocoaDialClient.h in Headers */,
-				C09C9F1EEF26E821217DC8CC83E9E848 /* CocoaDialServerObject.h in Headers */,
+				796C8B391DC26F187D9CDA73AB10E61B /* CocoaDialClient-umbrella.h in Headers */,
+				E42AB87F5801627284EF96F93B81020C /* CocoaDialClient.h in Headers */,
+				F3FABA0A60F67FD86D1F4E033AE3479E /* CocoaDialServerObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,43 +443,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13BA639851EF19278D56DEE56C5FAD89 /* CocoaDialClient */ = {
+		2C7CDE846224653CBB180558628B9436 /* CocoaDialClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E0F81B9DCA3CC6AB326F5C9F0F1EA1F /* Build configuration list for PBXNativeTarget "CocoaDialClient" */;
+			buildConfigurationList = A7A5ED6EDEA171667B3A164B532CBD8B /* Build configuration list for PBXNativeTarget "CocoaDialClient" */;
 			buildPhases = (
-				E6AAE992EC4D9D922D2334E3E344B133 /* Headers */,
-				C89D0398BA2471790A467DCB6BECB2FF /* Sources */,
-				CE5159BF5C77007A8341A72D2F2E92E8 /* Frameworks */,
-				1C810C2CDBF42D45F67160963030C85A /* Resources */,
+				B20084E063AF3C321615443676BBF689 /* Headers */,
+				DE4EEFA1BD9B86F1FAA84876B672A43B /* Sources */,
+				7B92D978F6EBAD1856C9E40075B83DA7 /* Frameworks */,
+				04F8BFE492DAC7971FEF9FEB6661FC9B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1BAD185565E3F44C6BC8152364AE24D /* PBXTargetDependency */,
+				7B4317438C83C9BAAA17693685B0F1D9 /* PBXTargetDependency */,
+				ED3D5DD09CF8FFE265C995A153B469A1 /* PBXTargetDependency */,
 			);
 			name = CocoaDialClient;
 			productName = CocoaDialClient;
-			productReference = DA2F2A9EC65DAC8B50D1CC1BD2E83488 /* CocoaDialClient.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5FB5B1C4A975106860A731D309E43067 /* Pods-CocoaDialClient_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAA042E1F99799A38020819E0E666D0B /* Build configuration list for PBXNativeTarget "Pods-CocoaDialClient_Example" */;
-			buildPhases = (
-				384B221AFB2396B3A9B11C076589E783 /* Headers */,
-				115578B0451B2AFD1B35B491D04BB187 /* Sources */,
-				25B88C16900BE82C1C762D1E4E97EF65 /* Frameworks */,
-				F1B73664A85F01EB0CB59A55A125D890 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				198DBC8EFF4F2E8DD60EB629A3C120C2 /* PBXTargetDependency */,
-				5D6CFCA12BEE167BEBB803CCDA90CB22 /* PBXTargetDependency */,
-			);
-			name = "Pods-CocoaDialClient_Example";
-			productName = "Pods-CocoaDialClient_Example";
-			productReference = 5A9DFAC53FF8A02CD798C237DC8DA6BA /* Pods_CocoaDialClient_Example.framework */;
+			productReference = 2E6B01040B16A53ADF30EEDCB9E6985C /* CocoaDialClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B918B4EAACE164155D5737F434FBFB24 /* Pods-CocoaDialClient_Tests */ = {
@@ -422,7 +479,7 @@
 			);
 			name = "Pods-CocoaDialClient_Tests";
 			productName = "Pods-CocoaDialClient_Tests";
-			productReference = E6D22D20CBACE38A24ED0BAFDD9D4CB1 /* Pods_CocoaDialClient_Tests.framework */;
+			productReference = 2F281BF0BD6F26580837712141A9521C /* Pods_CocoaDialClient_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */ = {
@@ -440,7 +497,46 @@
 			);
 			name = CocoaAsyncSocket;
 			productName = CocoaAsyncSocket;
-			productReference = 0411AD1E706E10578DE390ABB5FB11F6 /* CocoaAsyncSocket.framework */;
+			productReference = 91AD13F239E33790497EA83FE9C4A225 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F463D4A3EEF3F5D57D5B193F641A8571 /* XMLDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2338C08BE77A9AA89FD639FB92C6322 /* Build configuration list for PBXNativeTarget "XMLDictionary" */;
+			buildPhases = (
+				88BAA494EA070C9AD032F4B71CC3825E /* Headers */,
+				7B1752794F88D04F54FF14FDD5D00506 /* Sources */,
+				334300B1C3D3C9412B2DC25AD58493E2 /* Frameworks */,
+				CA6919C533B36DF7DB945EB8ED38C31C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLDictionary;
+			productName = XMLDictionary;
+			productReference = F4B618FBDA728725A1385B222ED6F459 /* XMLDictionary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8536FF6867680CE2DB5E769C60C6A76 /* Pods-CocoaDialClient_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3370087DBEFB42C8671456E7903B3CEB /* Build configuration list for PBXNativeTarget "Pods-CocoaDialClient_Example" */;
+			buildPhases = (
+				0658021CB605ECBF238C50FF400198E1 /* Headers */,
+				39219444881CF2E208F36C255C1941B4 /* Sources */,
+				98B0B6DD36BE35735B6224854A157918 /* Frameworks */,
+				F03EBEC76540D94E1DB33280BA705CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C69EB9BF4C1640D0E670D706208EC920 /* PBXTargetDependency */,
+				B5451D0328C32D5E463491F2FC7D9C53 /* PBXTargetDependency */,
+				F21716F33A1B603045C6BC0E06258EE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-CocoaDialClient_Example";
+			productName = "Pods-CocoaDialClient_Example";
+			productReference = 8D3EDCAA6812F5D1C1E8C09341E0CFB9 /* Pods_CocoaDialClient_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -460,20 +556,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 013C76347A4E9769315A6334B6F81572 /* Products */;
+			productRefGroup = B9CD00C4375193B4B73EF8B603D913CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */,
-				13BA639851EF19278D56DEE56C5FAD89 /* CocoaDialClient */,
-				5FB5B1C4A975106860A731D309E43067 /* Pods-CocoaDialClient_Example */,
+				2C7CDE846224653CBB180558628B9436 /* CocoaDialClient */,
+				F8536FF6867680CE2DB5E769C60C6A76 /* Pods-CocoaDialClient_Example */,
 				B918B4EAACE164155D5737F434FBFB24 /* Pods-CocoaDialClient_Tests */,
+				F463D4A3EEF3F5D57D5B193F641A8571 /* XMLDictionary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C810C2CDBF42D45F67160963030C85A /* Resources */ = {
+		04F8BFE492DAC7971FEF9FEB6661FC9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -487,7 +584,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1B73664A85F01EB0CB59A55A125D890 /* Resources */ = {
+		CA6919C533B36DF7DB945EB8ED38C31C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03EBEC76540D94E1DB33280BA705CA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,11 +608,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		115578B0451B2AFD1B35B491D04BB187 /* Sources */ = {
+		39219444881CF2E208F36C255C1941B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D617EBD93C9561FF482CBE88A7CE56F1 /* Pods-CocoaDialClient_Example-dummy.m in Sources */,
+				099BE7891BD415875425F13FC006F6C5 /* Pods-CocoaDialClient_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +621,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E028B0182FAACE942923BF6D5E6322C6 /* Pods-CocoaDialClient_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1752794F88D04F54FF14FDD5D00506 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7AB279F7B2D7205BA950BB1AB3814 /* XMLDictionary-dummy.m in Sources */,
+				C24990E3A2232F2BCC01C953CB517187 /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,49 +643,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C89D0398BA2471790A467DCB6BECB2FF /* Sources */ = {
+		DE4EEFA1BD9B86F1FAA84876B672A43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3701C8CA10320C54072DB4F9A7A0EE6A /* CocoaDialClient-dummy.m in Sources */,
-				75421E1CB5039B9C0122B8C4D5EB973F /* CocoaDialClient.m in Sources */,
-				DFF193A6C08C4F761BA46A221E07DD89 /* CocoaDialServerObject.m in Sources */,
+				EF091FB0C911CE0CC15B1DF09573A321 /* CocoaDialClient-dummy.m in Sources */,
+				D3A04581E10470A979D3744F4605EEB7 /* CocoaDialClient.m in Sources */,
+				9CA22578CF1142DB33C5297495E59E2A /* CocoaDialServerObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		198DBC8EFF4F2E8DD60EB629A3C120C2 /* PBXTargetDependency */ = {
+		7B4317438C83C9BAAA17693685B0F1D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
-			targetProxy = 8D5AF72483FCD43F729D52B30314BD10 /* PBXContainerItemProxy */;
-		};
-		5D6CFCA12BEE167BEBB803CCDA90CB22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaDialClient;
-			target = 13BA639851EF19278D56DEE56C5FAD89 /* CocoaDialClient */;
-			targetProxy = 5D8962F85F98128953C2CE441A9A2C72 /* PBXContainerItemProxy */;
+			targetProxy = 81A0C14B5FAE9DA46B9531627EF29842 /* PBXContainerItemProxy */;
 		};
 		89C84D9CEB3D27691967638DE78DF6A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CocoaDialClient_Example";
-			target = 5FB5B1C4A975106860A731D309E43067 /* Pods-CocoaDialClient_Example */;
+			target = F8536FF6867680CE2DB5E769C60C6A76 /* Pods-CocoaDialClient_Example */;
 			targetProxy = 68CF08BF703A502654A0FE932CF55A0F /* PBXContainerItemProxy */;
 		};
-		D1BAD185565E3F44C6BC8152364AE24D /* PBXTargetDependency */ = {
+		B5451D0328C32D5E463491F2FC7D9C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaDialClient;
+			target = 2C7CDE846224653CBB180558628B9436 /* CocoaDialClient */;
+			targetProxy = 9FDDF3E40D8D1815E101611F139AD831 /* PBXContainerItemProxy */;
+		};
+		C69EB9BF4C1640D0E670D706208EC920 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
-			targetProxy = 1C87C5BC6FA974CABE9F97C4E5188467 /* PBXContainerItemProxy */;
+			targetProxy = 1F5A469EB0ED7A9E0B2B3B93FA5B1D20 /* PBXContainerItemProxy */;
+		};
+		ED3D5DD09CF8FFE265C995A153B469A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLDictionary;
+			target = F463D4A3EEF3F5D57D5B193F641A8571 /* XMLDictionary */;
+			targetProxy = 13DE05CAC724AF50BA3B8265DE708647 /* PBXContainerItemProxy */;
+		};
+		F21716F33A1B603045C6BC0E06258EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMLDictionary;
+			target = F463D4A3EEF3F5D57D5B193F641A8571 /* XMLDictionary */;
+			targetProxy = 07D1EE31267950EEFC9A2BDC5B09F3D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		195105F12388C9EEDDA0BACC69A86C53 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */;
+			baseConfigurationReference = 338EA023E2F14D4570194B2C93552C70 /* CocoaAsyncSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,7 +725,7 @@
 			};
 			name = Debug;
 		};
-		2137E66D2D761A72508DF3485319396F /* Release */ = {
+		43FF0890A8E6B6D91AA8FDFFBFB22E56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95E31BA7D5E011565A7895D13D382864 /* Pods-CocoaDialClient_Example.release.xcconfig */;
 			buildSettings = {
@@ -634,7 +759,7 @@
 			};
 			name = Release;
 		};
-		58E444D6C1DAC4E6AB2634EEA35D041F /* Release */ = {
+		57DBAD98AB5E8D8AED95BD176C738294 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8FC52C83A252B323C56CC67E0C1AB96 /* CocoaDialClient.xcconfig */;
 			buildSettings = {
@@ -655,6 +780,37 @@
 				MODULEMAP_FILE = "Target Support Files/CocoaDialClient/CocoaDialClient.modulemap";
 				PRODUCT_MODULE_NAME = CocoaDialClient;
 				PRODUCT_NAME = CocoaDialClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6110D6E4E091777DD1A12AC0073BC1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E601314FC2E554131149B6DF31DDA2 /* XMLDictionary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLDictionary/XMLDictionary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLDictionary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMLDictionary/XMLDictionary.modulemap";
+				PRODUCT_MODULE_NAME = XMLDictionary;
+				PRODUCT_NAME = XMLDictionary;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -757,7 +913,7 @@
 			};
 			name = Release;
 		};
-		AF0515B80F487BE9D5FF0C03890391FA /* Debug */ = {
+		B35FA4F4C19BF6F025D4EB8FD5660BA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D8FC52C83A252B323C56CC67E0C1AB96 /* CocoaDialClient.xcconfig */;
 			buildSettings = {
@@ -787,7 +943,37 @@
 			};
 			name = Debug;
 		};
-		CEB9129BDA90A35CD8C059E0A6232CA3 /* Debug */ = {
+		B6DD2735536D0C432972CF4427A1981D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E601314FC2E554131149B6DF31DDA2 /* XMLDictionary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMLDictionary/XMLDictionary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMLDictionary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMLDictionary/XMLDictionary.modulemap";
+				PRODUCT_MODULE_NAME = XMLDictionary;
+				PRODUCT_NAME = XMLDictionary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B895D8F3FECFC3161FE973DEB08685A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA7351155988D7781B025F306AD9F842 /* Pods-CocoaDialClient_Example.debug.xcconfig */;
 			buildSettings = {
@@ -920,7 +1106,7 @@
 		};
 		FC7407A5A10B2D6AC49BED55854A787A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0469EC467755C444DC684A90770240B4 /* CocoaAsyncSocket.xcconfig */;
+			baseConfigurationReference = 338EA023E2F14D4570194B2C93552C70 /* CocoaAsyncSocket.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -961,11 +1147,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E0F81B9DCA3CC6AB326F5C9F0F1EA1F /* Build configuration list for PBXNativeTarget "CocoaDialClient" */ = {
+		3370087DBEFB42C8671456E7903B3CEB /* Build configuration list for PBXNativeTarget "Pods-CocoaDialClient_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF0515B80F487BE9D5FF0C03890391FA /* Debug */,
-				58E444D6C1DAC4E6AB2634EEA35D041F /* Release */,
+				B895D8F3FECFC3161FE973DEB08685A4 /* Debug */,
+				43FF0890A8E6B6D91AA8FDFFBFB22E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -979,6 +1165,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A7A5ED6EDEA171667B3A164B532CBD8B /* Build configuration list for PBXNativeTarget "CocoaDialClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B35FA4F4C19BF6F025D4EB8FD5660BA9 /* Debug */,
+				57DBAD98AB5E8D8AED95BD176C738294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -988,11 +1183,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAA042E1F99799A38020819E0E666D0B /* Build configuration list for PBXNativeTarget "Pods-CocoaDialClient_Example" */ = {
+		E2338C08BE77A9AA89FD639FB92C6322 /* Build configuration list for PBXNativeTarget "XMLDictionary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CEB9129BDA90A35CD8C059E0A6232CA3 /* Debug */,
-				2137E66D2D761A72508DF3485319396F /* Release */,
+				B6DD2735536D0C432972CF4427A1981D /* Debug */,
+				6110D6E4E091777DD1A12AC0073BC1A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

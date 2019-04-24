@@ -32,10 +32,15 @@
 - (instancetype)init;
 - (instancetype)initWithDelegate:(nullable id <CocoaDialClientDelegate>)aDelegate;
 - (BOOL)findServers;
+- (BOOL)findServersWithTimeout:(int)timeoutMs;
+- (BOOL)getApplicationData:(NSString*)applicationName atServer:(CocoaDialServerObject*)server completionHandler:(void (^)(NSDictionary* _Nullable data, NSError* _Nullable connectionError)) handler;
+- (BOOL)launchApplication:(NSString*)applicationName atServer:(CocoaDialServerObject*)server withParameters:(NSString*)parameters;
+- (NSArray *) getServers;
 
-@property (nonatomic,retain) id<CocoaDialClientDelegate> delegate;
+@property (nonatomic, retain) id<CocoaDialClientDelegate> delegate;
 @property (nonatomic, retain) GCDAsyncUdpSocket *udpSocket;
-@property (nonatomic,retain) NSMutableArray *servers;
+@property (nonatomic, retain) NSMutableArray *servers;
+
 @end
 
 

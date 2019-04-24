@@ -13,6 +13,9 @@
 @synthesize uuid;
 @synthesize hostAddress;
 @synthesize location;
+@synthesize applicationUrl;
+@synthesize friendlyName;
+@synthesize modelName;
 
 - (id) init {
     self = [super init];
