@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/lcaldoncelli'
 
   s.ios.deployment_target = '8.0'
-  s.watchos.deployment_target = '5.0'
 
   s.source_files = 'CocoaDialClient/Classes/**/*'
   
